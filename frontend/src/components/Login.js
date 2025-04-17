@@ -4,7 +4,7 @@ import axios from "axios";
 import "../css/Auth.css";
 import { useNavigate } from "react-router-dom";
 
-const Login = () => {
+const Login = ({ setRole }) => {
   const navigate = useNavigate();
 
   const [formData, setFormData] = useState({
@@ -15,9 +15,10 @@ const Login = () => {
   const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
+    const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [e.target.name]: e.target.value,
+      [name]: value,
     }));
   };
 
@@ -29,6 +30,7 @@ const Login = () => {
 
       localStorage.setItem("token", token);
       localStorage.setItem("role", role);
+      setRole(role); // 👈 updates App and Navbar immediately
 
       setMessage("✅ Login successful!");
 
