@@ -1,0 +1,52 @@
+.patient-detail {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+}
+
+.patient-detail h2,
+.patient-detail h3 {
+  color: #003366;
+  margin-bottom: 1rem;
+}
+
+.patient-info p {
+  margin-bottom: 8px;
+}
+
+.consult-section form {
+  margin-bottom: 2rem;
+}
+
+.consult-section textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.consult-section button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.consult-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.consult-section ul li {
+  background: #f3f3f3;
+  padding: 8px;
+  margin-bottom: 6px;
+  border-radius: 5px;
+}

@@ -1,0 +1,50 @@
+.patient-list-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.patient-list-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.patient-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.patient-card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.patient-card:hover {
+  transform: translateY(-5px);
+}
+
+.patient-card h3 {
+  margin-top: 0;
+  color: #003366;
+}
+
+.detail-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.detail-btn:hover {
+  background-color: #0056b3;
+}
