@@ -1,0 +1,78 @@
+.technician-dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+.technician-dashboard h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.technician-dashboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.technician-dashboard th,
+.technician-dashboard td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.technician-dashboard th {
+  background-color: #f2f2f2;
+}
+
+/* 🔵 STATUS TAGS */
+.status-tag {
+  padding: 6px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 0.85rem;
+  display: inline-block;
+}
+
+.status-mild {
+  background-color: #4caf50;
+}
+
+.status-moderate {
+  background-color: #ff9800;
+}
+
+.status-severe {
+  background-color: #f44336;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.action-buttons a {
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.action-buttons a.view {
+  background-color: #0078d4;
+  color: white;
+}
+
+.action-buttons a.edit {
+  background-color: #ffa500;
+  color: white;
+}
+
+

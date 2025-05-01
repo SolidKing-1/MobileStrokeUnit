@@ -11,7 +11,7 @@ const Signup = () => {
     name: "",
     email: "",
     password: "",
-    role: "", // "tech" or "neurologist"
+    role: "",
   });
 
   const [message, setMessage] = useState("");
@@ -26,22 +26,32 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        "http://localhost:5000/api/signup",
-        formData
-      );
+      await axios.post("http://localhost:5000/api/signup", formData);
       setMessage("✅ Signup successful! Redirecting...");
       setTimeout(() => navigate("/login"), 1500);
     } catch (err) {
-      console.error(err);
       setMessage("❌ Error signing up. Try again.");
     }
   };
 
   return (
     <div className="auth-container">
-      <h2>📝 Signup</h2>
-      {message && <p>{message}</p>}
+      <div className="logo-section">
+        <h1>Mobile Stroke Unit</h1>
+        <p>Create an account to join our network</p>
+      </div>
+
+      <h2>📝 Sign Up</h2>
+      {message && (
+        <p
+          className={
+            message.startsWith("✅") ? "alert-success" : "alert-danger"
+          }
+        >
+          {message}
+        </p>
+      )}
+
       <form onSubmit={handleSubmit}>
         <input
           name="name"

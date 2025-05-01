@@ -6,12 +6,10 @@ import { useNavigate } from "react-router-dom";
 
 const Login = ({ setRole }) => {
   const navigate = useNavigate();
-
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
-
   const [message, setMessage] = useState("");
 
   const handleChange = (e) => {
@@ -30,27 +28,39 @@ const Login = ({ setRole }) => {
 
       localStorage.setItem("token", token);
       localStorage.setItem("role", role);
-      setRole(role); // 👈 updates App and Navbar immediately
+      setRole(role);
 
       setMessage("✅ Login successful!");
 
       setTimeout(() => {
         if (role === "tech") {
-          navigate("/patients/new");
+          navigate("/dashboard");
         } else {
           navigate("/patients");
         }
       }, 1000);
     } catch (err) {
-      console.error(err);
       setMessage("❌ Invalid email or password.");
     }
   };
 
   return (
     <div className="auth-container">
+      <div className="logo-section">
+        <h1>Mobile Stroke Unit</h1>
+        <p>Secure login for medical professionals</p>
+      </div>
+
       <h2>🔐 Login</h2>
-      {message && <p>{message}</p>}
+      {message && (
+        <p
+          className={
+            message.startsWith("✅") ? "alert-success" : "alert-danger"
+          }
+        >
+          {message}
+        </p>
+      )}
       <form onSubmit={handleSubmit}>
         <input
           name="email"
