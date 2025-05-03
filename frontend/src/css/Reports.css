@@ -28,7 +28,7 @@
 }
 
 .stats-box p {
-  margin: 0.5rem 0;
+  margin: 0.3rem ;
 }
 
 .trends-table {
@@ -50,14 +50,15 @@
 
 .export-area {
   display: flex;
-  margin-top: 2rem;
-  gap: 1rem;
+  margin-top: 1.5rem;
+  gap: 2rem;
 }
 
 .export-area textarea {
   flex: 1;
   padding: 10px;
   border-radius: 5px;
+  max-width: 400px;
   border: 1px solid #ccc;
 }
 
@@ -65,9 +66,12 @@
   background-color: #0078d4;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 10px;
+  width: 50x;
+  height: 5dvh;
   border-radius: 5px;
   cursor: pointer;
+  
 }
 
 .export-area button:hover {

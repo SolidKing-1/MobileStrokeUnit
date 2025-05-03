@@ -90,7 +90,8 @@ const NewPatientForm = () => {
   };
 
   return (
-    <div className="new-patient-form">
+    <div className="form-page">
+      <div className="new-patient-form">
       <h2>🧾 New Patient Form</h2>
       {message && <p>{message}</p>}
 
@@ -252,7 +253,10 @@ const NewPatientForm = () => {
         <button type="submit">Submit Patient</button>
       </form>
     </div>
-  );
+
+    </div>
+    
+      );
 };
 
 export default NewPatientForm;
