@@ -1,0 +1,46 @@
+.alerts-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.alerts-container h2 {
+  text-align: center;
+  color: #cc0000;
+  margin-bottom: 2rem;
+}
+
+.alerts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.alert-card {
+  background-color: #ffe6e6;
+  border: 2px solid #cc0000;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(204, 0, 0, 0.2);
+}
+
+.alert-card h3 {
+  margin-top: 0;
+  color: #cc0000;
+}
+
+.view-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 8px 12px;
+  background-color: #cc0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #990000;
+}

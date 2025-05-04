@@ -1,0 +1,116 @@
+.neuro-dashboard {
+  background-image: url("../assets/doctors.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  color: #fff;
+}
+
+.neuro-dashboard h2 {
+  text-align: center;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+
+.card {
+  flex: 2;
+  justify-content: center;
+  background-color: #79bff6;
+  padding: 1.5rem;
+  border-radius: 8px;
+  min-width: 250px;
+ 
+}
+
+.card h3 {
+  color: #0078d4;
+  margin-bottom: 0.5rem;
+}
+
+.neuro-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.neuro-table th,
+.neuro-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.neuro-table th {
+  background-color: #f1f1f1;
+  color: #003366;
+}
+
+/* Sidebar Links Styling */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between links */
+  background-color: #79bff6;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #003366;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #e1ecf7;
+}
+
+
+.card-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    color: rgb(60, 0, 255);
+    font-size: 2.5rem;
+    
+  }
+  
+h3, p {
+  width: 100%;
+    text-align: center;
+    color: rgb(60, 0, 255);
+    font-size: 1.5rem;
+
+}
+  
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    padding: 2rem;
+  }
+  
+
+
+
+
+

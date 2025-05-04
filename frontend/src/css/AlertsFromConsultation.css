@@ -1,0 +1,63 @@
+.alerts-from-consultation {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.alerts-from-consultation h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #d32f2f;
+}
+
+.alerts-from-consultation ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.alerts-from-consultation li {
+  background-color: #fef6f6;
+  border-left: 5px solid #d32f2f;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+.alerts-from-consultation strong {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.alerts-from-consultation em {
+  display: block;
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+.alerts-from-consultation p {
+  text-align: center;
+  color: #999;
+}
+
+.yes-badge {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.no-badge {
+  background-color: #ffcdd2;
+  color: #c62828;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
