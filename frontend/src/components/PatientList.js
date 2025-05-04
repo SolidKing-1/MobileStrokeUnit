@@ -10,7 +10,9 @@ const PatientList = () => {
   useEffect(() => {
     const fetchPatients = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/patients");
+        const res = await axios.get(
+          "https://solidking1.pythonanywhere.com/api/patients"
+        );
         setPatients(res.data); // Assume backend returns array of patients
       } catch (err) {
         console.error("Error fetching patients", err);

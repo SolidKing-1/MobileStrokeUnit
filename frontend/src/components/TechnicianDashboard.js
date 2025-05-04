@@ -9,7 +9,7 @@ const TechnicianDashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/patients")
+      .get("https://solidking1.pythonanywhere.com/api/patients")
       .then((res) => setPatients(res.data))
       .catch((err) => console.error(err));
   }, []);

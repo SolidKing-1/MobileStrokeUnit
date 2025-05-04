@@ -1,5 +1,6 @@
 // src/components/LandingPage.js
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../css/LandingPage.css";
 
 const LandingPage = () => {
@@ -31,12 +32,12 @@ const LandingPage = () => {
           <h1>Mobile Stroke Unit</h1>
           <p>Rapid response. Expert care. Anywhere.</p>
           <div className="buttons">
-            <a href="/login" className="btn primary">
+            <Link to="/login" className="btn primary">
               Log In
-            </a>
-            <a href="/signup" className="btn secondary">
+            </Link>
+            <Link to="/signup" className="btn secondary">
               Sign Up
-            </a>
+            </Link>
           </div>
         </div>
       </section>

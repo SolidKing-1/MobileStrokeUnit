@@ -23,7 +23,10 @@ const Login = ({ setRole }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/login", formData);
+      const res = await axios.post(
+        "https://solidking1.pythonanywhere.com/api/login",
+        formData
+      );
       const { token, role } = res.data;
 
       localStorage.setItem("token", token);

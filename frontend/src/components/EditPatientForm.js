@@ -26,7 +26,7 @@ const EditPatientForm = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/patients/${id}`)
+      .get(`https://solidking1.pythonanywhere.com/api/patients/${id}`)
       .then((res) => setFormData(res.data))
       .catch((err) => console.error("Error loading patient data", err));
   }, [id]);
@@ -42,7 +42,10 @@ const EditPatientForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:5000/api/patients/${id}`, formData);
+      await axios.put(
+        `https://solidking1.pythonanywhere.com/api/patients/${id}`,
+        formData
+      );
       setMessage("✅ Patient updated successfully!");
       setTimeout(() => navigate("/dashboard"), 1000);
     } catch (err) {

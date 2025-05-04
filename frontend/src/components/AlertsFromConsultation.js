@@ -7,7 +7,7 @@ const AlertsFromConsultation = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/technician_alerts")
+      .get("https://solidking1.pythonanywhere.com/api/technician_alerts")
       .then((res) => setAlerts(res.data))
       .catch((err) => console.error(err));
   }, []);

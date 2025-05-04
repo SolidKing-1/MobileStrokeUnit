@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
 import "./App.css";
 
 import NewPatientForm from "./components/NewPatientForm";
@@ -67,10 +67,11 @@ function App() {
 
 function Navbar() {
   const role = localStorage.getItem("role");
+  const navigate = useNavigate(); // ✅ get navigate function
 
   const logout = () => {
     localStorage.clear();
-    window.location.href = "/login";
+    navigate("/login"); // ✅ no page refresh
   };
 
   return (

@@ -31,13 +31,15 @@
 }
 
 .hero-content h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 20px;
+  color: #40E0D0;
 }
 
 .hero-content p {
   font-size: 1.3rem;
   margin-bottom: 30px;
+  color: #40E0D0;
 }
 
 .buttons .btn {

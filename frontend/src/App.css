@@ -8,11 +8,15 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f7fa;
-  color: #2d3436;
-  line-height: 1.6;
-}
+    background-image: url("../src/assets/medical-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+  }
+  
+
 
 .App {
   display: flex;
@@ -61,10 +65,15 @@ main {
   max-width: 1200px;
   width: 100%;
   margin: auto;
-  background-color: #ffffff;
+
+  background-image: url("../src/assets/mini_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
 }
 
 

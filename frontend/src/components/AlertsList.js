@@ -11,7 +11,9 @@ const AlertsList = () => {
   useEffect(() => {
     const fetchAlerts = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/alerts");
+        const res = await axios.get(
+          "https://solidking1.pythonanywhere.com/api/alerts"
+        );
         setAlerts(res.data); // Array of patients with alerts
       } catch (err) {
         console.error("Error fetching alerts", err);

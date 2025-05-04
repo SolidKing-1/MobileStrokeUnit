@@ -57,9 +57,13 @@ const NewPatientForm = () => {
         }
       }
 
-      await axios.post("http://localhost:5000/api/patients", payload, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
+      await axios.post(
+        "http://localhost:https://solidking1.pythonanywhere.com/api/patients",
+        payload,
+        {
+          headers: { "Content-Type": "multipart/form-data" },
+        }
+      );
 
       setMessage("✅ Patient submitted successfully!");
       setFormData({

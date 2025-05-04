@@ -18,7 +18,9 @@ const PatientDetail = () => {
   useEffect(() => {
     const fetchPatient = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/api/patients/${id}`);
+        const res = await axios.get(
+          `https://solidking1.pythonanywhere.com/api/patients/${id}`
+        );
         setPatient(res.data);
       } catch (err) {
         console.error("Error fetching patient", err);
@@ -28,7 +30,7 @@ const PatientDetail = () => {
     const fetchConsults = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:5000/api/patients/${id}/consultations`
+          `https://solidking1.pythonanywhere.com/api/patients/${id}/consultations`
         );
         setConsultations(res.data);
       } catch (err) {
@@ -46,7 +48,7 @@ const PatientDetail = () => {
     e.preventDefault();
     try {
       await axios.post(
-        `http://localhost:5000/api/patients/${id}/consultations`,
+        `https://solidking1.pythonanywhere.com/api/patients/${id}/consultations`,
         {
           note,
           administerDrug,
@@ -59,7 +61,7 @@ const PatientDetail = () => {
       setSelectedDrug("");
 
       const res = await axios.get(
-        `http://localhost:5000/api/patients/${id}/consultations`
+        `https://solidking1.pythonanywhere.com/api/patients/${id}/consultations`
       );
       setConsultations(res.data);
     } catch (err) {

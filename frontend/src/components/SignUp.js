@@ -26,7 +26,10 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/signup", formData);
+      await axios.post(
+        "https://solidking1.pythonanywhere.com/api/signup",
+        formData
+      );
       setMessage("✅ Signup successful! Redirecting...");
       setTimeout(() => navigate("/login"), 1500);
     } catch (err) {

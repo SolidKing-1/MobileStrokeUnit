@@ -1,7 +1,7 @@
-// src/components/NeurologistDashboard.js
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../css/NeurologistDashboard.css";
+import { Link } from "react-router-dom"; // ✅ import Link
 
 const NeurologistDashboard = () => {
   const [summary, setSummary] = useState({
@@ -12,7 +12,7 @@ const NeurologistDashboard = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/api/neurologist/summary")
+      .get("https://solidking1.pythonanywhere.com/api/neurologist/summary")
       .then((res) => setSummary(res.data))
       .catch((err) => console.error("Summary fetch error:", err));
   }, []);
@@ -20,11 +20,11 @@ const NeurologistDashboard = () => {
   return (
     <div className="neuro-dashboard">
       <div className="sidebar">
-        <a href="/neurologist_dashboard" className="active">
+        <Link to="/neurologist_dashboard" className="active">
           Dashboard
-        </a>
-        <a href="/patients">Patients</a>
-        <a href="/reports">Reports</a>
+        </Link>
+        <Link to="/patients">Patients</Link>
+        <Link to="/reports">Reports</Link>
       </div>
 
       <div className="main">
